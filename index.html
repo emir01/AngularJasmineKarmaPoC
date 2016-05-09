@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="src/content/main.css">
+    </head>
+
+    <body ng-app="app">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div ng-controller="AppController">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <button data-ng-click="greetMe()" type="button" class="btn btn-large btn-block btn-primary">Greet Me!</button>
+                            </div>
+                        </div>
+                        <h1>
+                            {{greeting}}
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="src/app/app.module.js"></script>
+    <script type="text/javascript" src="src/app/app.controller.js"></script>
+
+</html>
