@@ -26,7 +26,12 @@ module.exports = function(config) {
     // list of files to exclude
     exclude: [
     ],
-
+    
+    plugins: [
+      'karma-jasmine',
+      'karma-mocha-reporter',
+      "karma-chrome-launcher"
+    ],
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
@@ -36,7 +41,7 @@ module.exports = function(config) {
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['mocha'],
+    reporters: ["mocha"],
 
 
     // web server port
