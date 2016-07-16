@@ -13,14 +13,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <div ng-controller="AppController">
+                    <div ng-controller="HomepageController as vm">
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                <button data-ng-click="greetMe()" type="button" class="btn btn-large btn-block btn-primary">Greet Me!</button>
+                                <button data-ng-click="vm.greetUser()" type="button" class="btn btn-large btn-block btn-primary">Greet Me!</button>
                             </div>
                         </div>
                         <h1>
-                            {{greeting}}
+                            {{vm.greeting}}
                         </h1>
                     </div>
                 </div>
@@ -30,6 +30,6 @@
 
     <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
     <script type="text/javascript" src="src/app/app.module.js"></script>
-    <script type="text/javascript" src="src/app/app.controller.js"></script>
+    <script type="text/javascript" src="src/app/homepage/homepage.controller.js"></script>
 
 </html>
